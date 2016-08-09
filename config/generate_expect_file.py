@@ -5,12 +5,7 @@ import time
 
 
 def generate_expect(user,server,password,local_dir,server_dir):
-    user='root'
-    server='121.42.160.10'
-    password='charfield123+1s'
-    local_dir='/home/sarleon/daily/scptest/'
 
-    server_dir='/root/'
 
     if local_dir[-1] is not '/':
         local_dir=local_dir+'/'
@@ -83,7 +78,7 @@ def generate_expect(user,server,password,local_dir,server_dir):
     ''' %(user,server,password)
 
 
-    f=open('expect_temp_file','w')
+    f=open(os.getcwd()+'/config/expect_temp_file','w')
     f.write(scp_expect_file_content)
 
 

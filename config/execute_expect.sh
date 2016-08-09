@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-expect -f expect_temp_file
+expect -f config/expect_temp_file
